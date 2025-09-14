@@ -12,4 +12,10 @@ export class NaverController {
     }
     return this.naverService.scrape(url);
   }
+
+  @Get('verify-proxy')
+  async verifyProxy() {
+    return this.naverService.verifyProxy();
+  }
+
 }
